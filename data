@@ -1,0 +1,14 @@
+### 📁 `data/` Folder
+
+This folder contains the datasets used in the **Kazakh Text Similarity Dataset** project.
+
+#### Contents:
+- ✨ Raw text files for suspicious and source documents.
+- 📑 Preprocessed CSVs used for training similarity models.
+- 📂 Translated Kazakh snippets and aligned text pairs.
+
+#### How the data is organized:
+- `suspicious-files/` – Original suspicious documents.
+- `source-files/` – Original source documents.
+- `translated-kazakh-documents/` – Translated Kazakh snippets.
+- `*.csv` – Combined and cleaned datasets ready for model training or evaluation.
