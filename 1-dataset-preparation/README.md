@@ -19,7 +19,7 @@ This folder contains detailed steps, scripts, and explanations for creating the 
 6. **Balance and shuffle** the dataset to create robust final training and testing sets.
 
 ## Files:
-- [`1_dataset_preparation.ipynb`](1_dataset_preparation.ipynb):
+- [`1-dataset-preparation.ipynb`](1-dataset-preparation.ipynb):
   - Jupyter notebook detailing the dataset creation and preprocessing pipeline, with step-by-step explanations.
 
 ## Outputs:
