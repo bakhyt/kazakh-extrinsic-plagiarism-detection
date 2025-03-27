@@ -45,11 +45,23 @@ Navigate through the folders sequentially to replicate dataset creation, underst
 - Employs transformer-based models (XLM-RoBERTa) for robust and accurate detection.
 - Includes complete, reproducible notebooks and code examples for transparency and ease of replication.
 
+## ✅ Conclusion and Future Work
+
+In this project, we successfully created a robust pipeline for detecting extrinsic plagiarism in Kazakh texts by:
+
+- **Preparing and labeling a Kazakh dataset** derived from the PAN corpus.
+- **Training and evaluating** transformer-based NLP models, particularly XLM-RoBERTa, achieving strong performance metrics.
+- Developing a **plagiarism detection pipeline** to efficiently identify plagiarism at scale.
+
+### 🚀 Future Directions:
+- Improve detection accuracy with fine-tuning strategies and advanced transformer architectures.
+- Explore multilingual and cross-lingual plagiarism detection.
+- Integrate this plagiarism detection pipeline into practical applications, such as educational platforms and publishing industry solutions.
+
 ## 📚 References
 - [PAN Plagiarism Detection Corpus](https://pan.webis.de/)
 - [XLM-RoBERTa: Cross-lingual Language Model](https://arxiv.org/abs/1911.02116)
 - [Simhash for Efficient Similarity Detection](https://en.wikipedia.org/wiki/SimHash)
 
 ---
-
 Feel free to explore, contribute, or contact the authors for collaboration opportunities or additional details regarding the datasets, methods, and findings presented.
