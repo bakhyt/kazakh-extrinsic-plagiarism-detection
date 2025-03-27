@@ -13,7 +13,7 @@ This section describes the training process of machine learning models, specific
   - Optimizer: AdamW with Warmup Scheduler
 
 ## Notebook:
-- [`2-training-xlm-roberta-large-model-on-kazakh-dataset.ipynb`](2-training-xlm-roberta-large-model-on-kazakh-dataset.ipynb):
+- [`3_model_training.ipynb`](3_model_training.ipynb):
   - Complete training script, hyperparameters, and detailed explanations.
 
 ## Training Results:
