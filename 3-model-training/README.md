@@ -13,7 +13,7 @@ This section describes the training process of machine learning models, specific
   - Optimizer: AdamW with Warmup Scheduler
 
 ## Notebook:
-- [`3_model_training.ipynb`](3_model_training.ipynb):
+- [`3-model-training.ipynb`](3-model-training.ipynb):
   - Complete training script, hyperparameters, and detailed explanations.
 
 ## Training Results:
