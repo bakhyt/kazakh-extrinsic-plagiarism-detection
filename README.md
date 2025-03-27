@@ -1,10 +1,18 @@
-# Kazakh Text Similarity Dataset
+# Kazakh Extrinsic Plagiarism Detection
 
-This repository contains the full pipeline and data files related to building a dataset for detecting text similarity in the Kazakh language.
+This project develops **extrinsic plagiarism detection methods** tailored specifically for the Kazakh language. We created a comprehensive labeled dataset, trained and benchmarked various machine learning models (including XLM-RoBERTa), and evaluated their effectiveness.
 
-The project includes:
-- Scripts for parsing and cleaning XML data
-- Sentence and paragraph extraction
-- Plagiarism detection alignment
-- Translations to Kazakh
-- Final dataset compilation and evaluation
+## Project Goals:
+
+- Develop the first publicly available Kazakh extrinsic plagiarism detection dataset.
+- Train and benchmark models specifically for the Kazakh language.
+- Establish baseline results and comparison with English-language models.
+
+## Project Structure:
+
+- [`1-dataset-preparation`](1-dataset-preparation): Code and methodology for dataset preparation.
+- [`2-dataset`](2-dataset): Ready-to-use training and testing datasets.
+- [`3-model-training`](3-model-training): Code and details for model training.
+- [`4-model-evaluation`](4-model-evaluation): Model evaluation, benchmarking results, and metrics.
+
+For details, navigate to each subfolder above.
