@@ -2,7 +2,7 @@
 
 # Kazakh Extrinsic Plagiarism Detection
 
-This repository provides datasets, code, and methods specifically designed for extrinsic plagiarism detection in the Kazakh language. The project aims to identify plagiarism by comparing suspicious texts against a collection of potential source texts using advanced Natural Language Processing (NLP) methods, particularly transformer-based models and simhash algorithms.
+This repository provides datasets, code, and methods specifically designed for extrinsic plagiarism detection in the Kazakh language. The project aims to identify plagiarism by comparing suspicious texts against a collection of potential source texts using advanced Natural Language Processing (NLP) methods, particularly transformer-based models and Simhash algorithms.
 
 ## 📂 Repository Structure
 
@@ -63,5 +63,5 @@ In this project, we successfully created a robust pipeline for detecting extrins
 - [XLM-RoBERTa: Cross-lingual Language Model](https://arxiv.org/abs/1911.02116)
 - [Simhash for Efficient Similarity Detection](https://en.wikipedia.org/wiki/SimHash)
 
----
-Feel free to explore, contribute, or contact the authors for collaboration opportunities or additional details regarding the datasets, methods, and findings presented.
+## 📬 Contact
+For questions, suggestions, or collaboration inquiries, please reach out via email or GitHub issues.
