@@ -1,6 +1,6 @@
 # Kazakh Extrinsic Plagiarism Detection
 
-This project develops **extrinsic plagiarism detection methods** tailored specifically for the Kazakh language. We created a comprehensive labeled dataset, trained and benchmarked various machine learning models (including XLM-RoBERTa), and evaluated their effectiveness.
+This project develops **extrinsic plagiarism detection methods** tailored specifically for the Kazakh language. We created a comprehensive labeled dataset, trained and tested machine learning model (XLM-RoBERTa), and evaluated their effectiveness.
 
 ## Project Goals:
 
