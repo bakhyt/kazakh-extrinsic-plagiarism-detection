@@ -1,7 +1,22 @@
-**Kazakh Model Training**  
+### 📁 `3-model-training/` Folder
 
-In this stage, we train a **multilingual XLM-RoBERTa Large** model on our custom-prepared **Kazakh dataset** for the task of **text similarity and plagiarism detection**. The dataset consists of 120,000 labeled pairs of suspicious and source texts, balanced across positive (plagiarized) and negative (non-plagiarized) examples.
+# Model Training
+This section describes the training process of machine learning models, specifically fine-tuned for Kazakh text similarity detection.
 
-Given the low-resource nature of the **Kazakh language**, we leverage a **pretrained transformer model** capable of handling multilingual text to fine-tune it for our specific task. We use stratified splitting to ensure label balance across training and validation sets and apply several optimization techniques such as learning rate scheduling, mixed precision training, and regularization to improve performance.
+## Model Details:
+- **Architecture:** XLM-RoBERTa (Large variant)
+- **Dataset:** Kazakh labeled dataset (120K paragraph pairs)
+- **Training Parameters:**
+  - Learning Rate: `1e-5`
+  - Epochs: `3-5`
+  - Batch Size: `4` (with gradient accumulation)
+  - Optimizer: AdamW with Warmup Scheduler
 
-The goal of this training is to produce a robust model that can accurately classify whether two given paragraphs are semantically similar or not.
+## Notebook:
+- [`2-training-xlm-roberta-large-model-on-kazakh-dataset.ipynb`](2-training-xlm-roberta-large-model-on-kazakh-dataset.ipynb):
+  - Complete training script, hyperparameters, and detailed explanations.
+
+## Training Results:
+- Training and validation losses
+- Accuracy, Precision, Recall, and F1-score on validation set
+
