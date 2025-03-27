@@ -1,22 +1,26 @@
 ### 📁 `1-dataset-preparation/` Folder
 
-This folder contains the **code and scripts used for preparing the dataset** for the *Kazakh Text Similarity Detection* task.
+# Dataset Preparation
 
-#### 📄 `1_extract_plagiarised_texts_and_translate_and_create_dataset.ipynb`
+This folder contains detailed steps, scripts, and explanations on how the **Kazakh extrinsic plagiarism detection dataset** was created.
 
-This notebook includes the following steps:
+## Overview:
+- The dataset is derived from the original [PAN Plagiarism Detection Corpus](https://pan.webis.de/).
+- English plagiarism cases were identified using XML metadata provided by the PAN corpus.
+- Identified English text pairs (suspicious and source texts) were then automatically translated into Kazakh using the **Google Translate API**.
+- Text pairs (both original English and translated Kazakh versions) were carefully aligned, labeled (as plagiarized or non-plagiarized), cleaned, and shuffled.
 
-1. **Extraction** of plagiarized text segments from the [PAN Plagiarism Detection Corpus](https://pan.webis.de/).
-2. Using PAN XML files to locate suspicious and source texts via offset and length.
-3. **Saving the extracted segments** as individual `.txt` files.
-4. **Translating** the English segments into **Kazakh** using Google Translate API.
-5. Organizing English–Kazakh pairs into folders by alignment.
-6. **Creating a labeled CSV dataset** suitable for training text similarity detection models.
+## Preparation Workflow:
+1. **Extracting plagiarized text pairs** from PAN XML files.
+2. **Translating English texts** to Kazakh language automatically.
+3. **Matching and organizing** translated Kazakh texts with their original English counterparts.
+4. **Labelling text pairs**: each aligned pair is labeled (`1` for plagiarized, `0` for non-plagiarized).
+5. **Data cleaning and deduplication**: ensuring uniqueness and quality of text pairs.
+6. **Balancing and shuffling**: creating final training and testing datasets ready for model training and evaluation.
 
----
+## Files:
+- [`data-preparation.ipynb`](`1_extract_plagiarised_texts_and_translate_and_create_dataset.ipynb`):
+  - Complete notebook detailing the entire dataset creation and preprocessing pipeline with explanatory comments.
 
-### 📌 Notes:
-- Both **suspicious** and **source** texts are extracted.
-- Each aligned pair is labeled (`1` for plagiarized, `0` for non-plagiarized).
-- Translations are prefixed with `kz-` for distinction.
-- The output is structured and ready for model training and evaluation.
+## Outputs:
+The processed, cleaned, and finalized datasets are available in the [`2-dataset`](../2-dataset) folder for immediate use in model training and evaluation.
