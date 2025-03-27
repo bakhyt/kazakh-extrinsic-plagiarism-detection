@@ -1,4 +1,4 @@
-### 📁 `data-preparation/` Folder
+### 📁 `1-dataset-preparation/` Folder
 
 This folder contains the **code and scripts used for preparing the dataset** for the *Kazakh Text Similarity Detection* task.
 
