@@ -1,7 +1,7 @@
 ### 📁 `4-model-evaluation/` Folder
 
-# Model Evaluation and Benchmarking
-This section evaluates and benchmarks trained models using test datasets.
+# Model Evaluation
+This section evaluates the trained models using test datasets.
 
 ## Evaluation Metrics:
 - **Accuracy:** Overall correctness of model predictions.
@@ -15,10 +15,10 @@ This section evaluates and benchmarks trained models using test datasets.
 - English XLM-RoBERTa Base (for comparative purposes)
 
 ## Notebook:
-- [`4_model_evaluation.ipynb`](4_model_evaluation.ipynb):
-  - Complete evaluation script and detailed benchmarking results.
+- [`4-model-evaluation.ipynb`](4-model-evaluation.ipynb):
+  - Complete evaluation script and results.
 
-## Benchmark Results:
+## Results:
 | Model                         | Accuracy | Precision | Recall | F1-Score |
 |-------------------------------|----------|-----------|--------|----------|
 | Kazakh XLM-RoBERTa Large v3   | 95.1%    | 99.4%     | 90.7%  | 94.9%    |
