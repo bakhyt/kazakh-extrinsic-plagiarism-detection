@@ -5,7 +5,7 @@ This project develops **extrinsic plagiarism detection methods** tailored specif
 ## Project Goals:
 
 - Develop the first publicly available Kazakh extrinsic plagiarism detection dataset.
-- Train and benchmark models specifically for the Kazakh language.
+- Train and test models specifically for the Kazakh language.
 - Establish baseline results and comparison with English-language models.
 
 ## Project Structure:
@@ -13,6 +13,6 @@ This project develops **extrinsic plagiarism detection methods** tailored specif
 - [`1-dataset-preparation`](1-dataset-preparation): Code and methodology for dataset preparation.
 - [`2-dataset`](2-dataset): Ready-to-use training and testing datasets.
 - [`3-model-training`](3-model-training): Code and details for model training.
-- [`4-model-evaluation`](4-model-evaluation): Model evaluation, benchmarking results, and metrics.
+- [`4-model-evaluation`](4-model-evaluation): Model evaluation and metric results.
 
 For details, navigate to each subfolder above.
