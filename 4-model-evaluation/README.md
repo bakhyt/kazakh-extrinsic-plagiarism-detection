@@ -1,15 +1,26 @@
-**Model Evaluation on Test Set**  
+### 📁 `4-model-evaluation/` Folder
 
-In this stage, we evaluate the performance of our trained models using the **dedicated Kazakh and English test datasets** prepared earlier. These datasets are labeled, balanced, and unique, consisting of real-world examples that were not seen during training. Each model is evaluated on its respective language dataset to assess its ability to detect semantic similarity and potential plagiarism.
+# Model Evaluation and Benchmarking
+This section evaluates and benchmarks trained models using test datasets.
 
-We benchmarked multiple models, including:
-- **Kazakh XLM-RoBERTa (base and large)** trained on the Kazakh dataset
-- **English XLM-RoBERTa (base)** trained on the English dataset
+## Evaluation Metrics:
+- **Accuracy:** Overall correctness of model predictions.
+- **Precision:** Accuracy of positive predictions.
+- **Recall:** Ability of the model to detect actual plagiarized instances.
+- **F1-score:** Harmonic mean of precision and recall.
 
-For each model, we compute standard classification metrics such as:
-- **Accuracy**
-- **Precision**
-- **Recall**
-- **F1-score**
+## Evaluated Models:
+- Kazakh XLM-RoBERTa Large (v2, v3)
+- Kazakh XLM-RoBERTa Base
+- English XLM-RoBERTa Base (for comparative purposes)
 
-These metrics provide insight into the model’s ability to correctly identify both plagiarized (positive) and non-plagiarized (negative) text pairs. The evaluation results are then compared and visualized to determine which model performs best under the given conditions, especially in the low-resource Kazakh setting.
+## Notebook:
+- [`3-evaluation-models-on-test-dataset-and-benchmarking.ipynb`](3-evaluation-models-on-test-dataset-and-benchmarking.ipynb):
+  - Complete evaluation script and detailed benchmarking results.
+
+## Benchmark Results:
+| Model                         | Accuracy | Precision | Recall | F1-Score |
+|-------------------------------|----------|-----------|--------|----------|
+| Kazakh XLM-RoBERTa Large v3   | 95.1%    | 99.4%     | 90.7%  | 94.9%    |
+| Kazakh XLM-RoBERTa Base       | 74.7%    | 66.8%     | 98.4%  | 79.6%    |
+| English XLM-RoBERTa Base      | 96.4%    | 94.3%     | 98.8%  | 96.5%    |
