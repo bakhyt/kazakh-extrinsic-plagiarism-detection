@@ -1,16 +1,20 @@
 ### 📁 `3-model-training/` Folder
 
 # Model Training
-This section describes the training process of machine learning models, specifically fine-tuned for Kazakh text similarity detection.
 
-## Model Details:
-- **Architecture:** XLM-RoBERTa (Large variant)
-- **Dataset:** Kazakh labeled dataset (120K paragraph pairs)
-- **Training Parameters:**
-  - Learning Rate: `1e-5`
-  - Epochs: `3-5`
-  - Batch Size: `4` (with gradient accumulation)
-  - Optimizer: AdamW with Warmup Scheduler
+We trained several state-of-the-art transformer-based models separately on both the **English** and **Kazakh** datasets. The selected models for our plagiarism detection task include:
+
+1. **[Sentence Transformers (all-mpnet-base-v2)](https://huggingface.co/sentence-transformers/all-mpnet-base-v2)**  
+2. **[XLM-RoBERTa Base](https://huggingface.co/xlm-roberta-base)**  
+3. **[XLM-RoBERTa Large](https://huggingface.co/xlm-roberta-large)**  
+4. **[KazakhBERTmulti (amandyk/KazakhBERTmulti)](https://huggingface.co/amandyk/KazakhBERTmulti)**  
+5. **[DistilBERT](https://huggingface.co/distilbert-base-uncased)**  
+6. **[MiniLM](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)**  
+7. **[SBERT](https://huggingface.co/sentence-transformers)**  
+
+These models were selected based on their demonstrated effectiveness in NLP tasks, especially in semantic text similarity and classification tasks.
+
+---
 
 ## Notebook:
 - [`3-model-training.ipynb`](3-model-training.ipynb):
