@@ -1,13 +1,17 @@
 ### 📁 `4-model-evaluation/` Folder
 
 # Model Evaluation
-This section evaluates the trained models using on both Kazakh and English test datasets. The tested models include:
 
-- **Kazakh**: XLM-RoBERTa (Large/Base), DistilBERT, MiniLM, SBERT, KazakhBERTmulti
-- **English**: XLM-RoBERTa (Large/Base), DistilBERT, MiniLM, SBERT
+This folder assesses the performance of trained models on both Kazakh and English test datasets. The evaluation covers the following models:
 
-Each model receives suspicious and source text pairs, then predicts whether the pair is plagiarized (label=1) or not (label=0). We compute accuracy, precision, recall, and F1-score for a comprehensive performance view. These results guide the selection of the optimal model for implementation in the Kazakh extrinsic plagiarism detection pipeline.
+- **Kazakh Models:**  
+  XLM-RoBERTa (Large/Base), DistilBERT, MiniLM, SBERT, KazakhBERTmulti
+- **English Models:**  
+  XLM-RoBERTa (Large/Base), DistilBERT, MiniLM, SBERT
 
-## Notebook:
-- [`4-model-evaluation.ipynb`](4-model-evaluation.ipynb):
-  - Complete evaluation script and results.
+For each model, suspicious and source text pairs are evaluated to determine if they are plagiarized (label=1) or not (label=0). We measure performance using Accuracy, Precision, Recall, and F1-score, providing a comprehensive overview of each model's effectiveness. These metrics guide the selection of the optimal model for integration into the Kazakh extrinsic plagiarism detection pipeline.
+
+## Notebook
+
+- **[`4-model-evaluation.ipynb`](4-model-evaluation.ipynb):**  
+  Contains the complete evaluation script along with detailed results analysis.
