@@ -2,37 +2,40 @@
 
 # Model Training
 
-In this stage, we trained several state-of-the-art transformer-based models separately on both **English** and **Kazakh** datasets to evaluate their effectiveness in extrinsic plagiarism detection. Our aim was to determine the most suitable model capable of accurately identifying plagiarism in Kazakh texts.
+This folder documents the training of several state-of-the-art transformer-based models on both **English** and **Kazakh** datasets for extrinsic plagiarism detection. The primary goal is to identify the model that best detects plagiarism in Kazakh texts.
 
-## 🧠 Models Trained:
+## 🧠 Trained Models
 
-**1. [SBERT(Sentence-BERT) or Sentence Transformers(all-mpnet-base-v2)](https://huggingface.co/sentence-transformers/all-mpnet-base-v2)**  
-A powerful sentence embedding model based on the MPNet architecture, specifically optimized for semantic textual similarity, yielding strong performance in capturing sentence-level semantics.
+1. **[SBERT (Sentence Transformers - all-mpnet-base-v2)](https://huggingface.co/sentence-transformers/all-mpnet-base-v2)**  
+   A powerful sentence embedding model built on the MPNet architecture, optimized for semantic textual similarity and capturing nuanced sentence-level semantics.
 
-**2. [XLM-RoBERTa Base](https://huggingface.co/xlm-roberta-base)**  
-A multilingual transformer-based model trained on text data from 100 languages, proficient in handling cross-lingual contexts and delivering consistent performance in multilingual NLP tasks.
+2. **[XLM-RoBERTa Base](https://huggingface.co/xlm-roberta-base)**  
+   A multilingual transformer trained on text from over 100 languages, proficient in cross-lingual tasks and delivering consistent performance across various NLP applications.
 
-**3. [XLM-RoBERTa Large](https://huggingface.co/xlm-roberta-large)**  
-An enhanced variant of XLM-RoBERTa Base with a greater number of parameters and deeper architecture, resulting in significantly improved accuracy in multilingual and nuanced semantic tasks such as plagiarism detection.
+3. **[XLM-RoBERTa Large](https://huggingface.co/xlm-roberta-large)**  
+   An enhanced version of XLM-RoBERTa Base with a larger number of parameters and a deeper architecture, offering improved accuracy in multilingual and complex semantic tasks such as plagiarism detection.
 
-**4. [KazakhBERTmulti (amandyk/KazakhBERTmulti)](https://huggingface.co/amandyk/KazakhBERTmulti)**  
-A specialized transformer model pretrained extensively on Kazakh textual data. Tailored explicitly for the Kazakh language, this model provides superior handling of linguistic subtleties, making it highly effective for NLP tasks focused on Kazakh.
+4. **[KazakhBERTmulti (amandyk/KazakhBERTmulti)](https://huggingface.co/amandyk/KazakhBERTmulti)**  
+   A specialized transformer model pretrained on extensive Kazakh textual data, designed to capture the linguistic subtleties of the Kazakh language and excel in related NLP tasks.
 
-**5. [DistilBERT](https://huggingface.co/distilbert-base-uncased)**  
-A lightweight and computationally efficient version of BERT. It achieves comparable accuracy with fewer parameters, making it ideal for environments where speed and efficiency are prioritized.
+5. **[DistilBERT](https://huggingface.co/distilbert-base-uncased)**  
+   A lightweight, efficient version of BERT that maintains comparable accuracy with fewer parameters, making it ideal for scenarios prioritizing speed and computational efficiency.
 
-**6. [MiniLM](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)**  
-A compact multilingual transformer optimized for generating high-quality sentence embeddings, offering a good balance between computational efficiency and strong performance in text similarity tasks.
+6. **[MiniLM](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)**  
+   A compact multilingual transformer optimized for generating high-quality sentence embeddings, balancing computational efficiency with robust performance in text similarity tasks.
 
 ## 📌 Comparative Model Training
 
-We systematically trained these models on both **Kazakh** and **English** datasets. Due to English being a high-resource language, models generally perform strongly on it, providing a useful performance benchmark. However, given that **Kazakh** is a lower-resource language, our primary focus was to evaluate and enhance models specifically suited to accurately detect text similarity in Kazakh.
+Models were trained systematically on both **Kazakh** and **English** datasets. Given that English is a high-resource language, its performance serves as a reliable benchmark. However, our main focus is on enhancing model performance for **Kazakh**, a lower-resource language, to ensure effective detection of plagiarism through accurate text similarity evaluation.
 
-## 📒 Notebook:
+## 📒 Notebook
 
-- [`3-model-training.ipynb`](3-model-training.ipynb):  
-    - Complete training script, hyperparameters, and detailed explanations.
+- **[`3-model-training.ipynb`](3-model-training.ipynb):**  
+  This notebook includes the complete training script, detailed hyperparameter configurations, and thorough explanations of the training process.
 
-## 📊 Training Results:
-- Comprehensive metrics including training/validation losses
-- Performance evaluations using accuracy, precision, recall, and F1-score on validation datasets
+## 📊 Training Results
+
+- Detailed metrics on training and validation losses.
+- Comprehensive evaluations based on accuracy, precision, recall, and F1-score on the validation datasets.
+
+This structured approach not only benchmarks model performance across languages but also facilitates the selection of the most effective model for deployment in the Kazakh plagiarism detection pipeline.
