@@ -13,7 +13,7 @@ This folder documents the training of several state-of-the-art transformer-based
    A multilingual transformer trained on text from over 100 languages, proficient in cross-lingual tasks and delivering consistent performance across various NLP applications.
 
 3. **[XLM-RoBERTa Large](https://huggingface.co/xlm-roberta-large)**  
-   An enhanced version of XLM-RoBERTa Base with a larger number of parameters and a deeper architecture, offering improved accuracy in multilingual and complex semantic tasks such as plagiarism detection.
+   An enhanced version of XLM-RoBERTa Base with more parameters and a deeper architecture, offering improved accuracy in multilingual and complex semantic tasks such as plagiarism detection.
 
 4. **[KazakhBERTmulti (amandyk/KazakhBERTmulti)](https://huggingface.co/amandyk/KazakhBERTmulti)**  
    A specialized transformer model pretrained on extensive Kazakh textual data, designed to capture the linguistic subtleties of the Kazakh language and excel in related NLP tasks.
@@ -26,7 +26,7 @@ This folder documents the training of several state-of-the-art transformer-based
 
 ## 📌 Comparative Model Training
 
-Models were trained systematically on both **Kazakh** and **English** datasets. Given that English is a high-resource language, its performance serves as a reliable benchmark. However, our main focus is on enhancing model performance for **Kazakh**, a lower-resource language, to ensure effective detection of plagiarism through accurate text similarity evaluation.
+Models were systematically trained on both **Kazakh** and **English** datasets. Since English is a high-resource language, its performance serves as a reliable benchmark. However, our primary focus is on enhancing model performance for **Kazakh**, a lower-resource language, to ensure effective plagiarism detection through accurate text similarity evaluation.
 
 ## 📒 Notebook
 
