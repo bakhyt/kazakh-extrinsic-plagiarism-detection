@@ -36,6 +36,3 @@ We systematically trained these models on both **Kazakh** and **English** datase
 ## 📊 Training Results:
 - Comprehensive metrics including training/validation losses
 - Performance evaluations using accuracy, precision, recall, and F1-score on validation datasets
-
-These results guide the selection of the optimal model for implementation in the Kazakh extrinsic plagiarism detection pipeline.
-
