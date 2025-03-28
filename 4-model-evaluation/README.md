@@ -9,7 +9,7 @@ This folder assesses the performance of trained models on both Kazakh and Englis
 - **English Models:**  
   XLM-RoBERTa (Large/Base), DistilBERT, MiniLM, SBERT
 
-For each model, suspicious and source text pairs from the separately prepared test datasets (Kazakh and English) are evaluated to determine if they are plagiarized (label=1) or not (label=0). We measure performance using Accuracy, Precision, Recall, and F1-score, which offer a comprehensive view of each model's effectiveness. These benchmark results are essential for selecting the optimal model for integration into the Kazakh extrinsic plagiarism detection pipeline.
+For each model, we evaluate suspicious and source text pairs from its corresponding test dataset—either the Kazakh or English version (available in the 2-dataset folder)—to determine whether each pair is plagiarized (label=1) or not (label=0). We measure performance using Accuracy, Precision, Recall, and F1-score, which offer a comprehensive view of each model's effectiveness. These benchmark results are essential for selecting the optimal model for integration into the Kazakh extrinsic plagiarism detection pipeline.
 
 ## Notebook
 
