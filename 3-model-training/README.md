@@ -2,7 +2,7 @@
 
 # Model Training
 
-This folder documents the training of several state-of-the-art transformer-based models on both **English** and **Kazakh** datasets for extrinsic plagiarism detection. The primary goal is to identify the model that best detects plagiarism in Kazakh texts.
+This folder documents the training of several state-of-the-art transformer-based models on both [English](../2-dataset) and [Kazakh](../2-dataset) datasets for extrinsic plagiarism detection. The primary goal is to identify the model that best detects plagiarism in Kazakh texts.
 
 ## 🧠 Trained Models
 
