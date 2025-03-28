@@ -37,5 +37,3 @@ Models were trained systematically on both **Kazakh** and **English** datasets. 
 
 - Detailed metrics on training and validation losses.
 - Comprehensive evaluations based on accuracy, precision, recall, and F1-score on the validation datasets.
-
-This structured approach not only benchmarks model performance across languages but also facilitates the selection of the most effective model for deployment in the Kazakh plagiarism detection pipeline.
