@@ -1,6 +1,6 @@
 ### 📁 `2-dataset/` Folder
 
-# Datasets
+# Dataset
 
 This folder contains the finalized datasets for training and evaluating text similarity and plagiarism detection models in both Kazakh and English.
 
