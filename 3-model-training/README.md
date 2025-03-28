@@ -26,8 +26,6 @@ This folder documents the training of several state-of-the-art transformer-based
 
 ## 📌 Comparative Model Training
 
-## 📌 Comparative Model Training
-
 Models were systematically trained on both [**Kazakh**](../2-dataset/kz_dataset_120K_ready_for_training.csv) and [**English**](../2-dataset/en_dataset_120K_ready_for_training.csv) datasets. Since English is a high-resource language, its performance serves as a reliable benchmark. However, our primary focus is on enhancing model performance for **Kazakh**, a lower-resource language, to ensure effective plagiarism detection through accurate text similarity evaluation.
 
 ## 📒 Notebook
