@@ -6,7 +6,7 @@ In this stage, we trained several state-of-the-art transformer-based models sepa
 
 ## 🧠 Models Trained:
 
-**1. [Sentence Transformers (all-mpnet-base-v2)](https://huggingface.co/sentence-transformers/all-mpnet-base-v2)**  
+**1. [SBERT(Sentence-BERT) or Sentence Transformers(all-mpnet-base-v2)](https://huggingface.co/sentence-transformers/all-mpnet-base-v2)**  
 A powerful sentence embedding model based on the MPNet architecture, specifically optimized for semantic textual similarity, yielding strong performance in capturing sentence-level semantics.
 
 **2. [XLM-RoBERTa Base](https://huggingface.co/xlm-roberta-base)**  
@@ -23,9 +23,6 @@ A lightweight and computationally efficient version of BERT. It achieves compara
 
 **6. [MiniLM](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)**  
 A compact multilingual transformer optimized for generating high-quality sentence embeddings, offering a good balance between computational efficiency and strong performance in text similarity tasks.
-
-**7. [SBERT (Sentence-BERT)](https://huggingface.co/sentence-transformers)**  
-An adaptation of the original BERT model optimized specifically for semantic similarity tasks, significantly enhancing efficiency when computing semantic relationships between text pairs.
 
 ## 📌 Comparative Model Training
 
