@@ -40,6 +40,22 @@ Each expert evaluated 200 text pairs, totaling 2,000 pairs. To check for inter-r
 
 ---
 
+## Assessment Instructions Video
+
+To ensure consistency and clarity in the evaluation process, a 40-minute instructional video was prepared. In this video, I explained the assessment process for the translated plagiarized texts, detailing how to answer the two key questions:
+
+1. **Meaningfulness of the Kazakh Version**
+2. **Similarity between the Kazakh Suspicious-Document and Kazakh Source-Document**
+
+The video includes a demonstration where five tasks were assessed as examples, illustrating the correct approach to the evaluation. The video was uploaded to YouTube and shared with all 10 Kazakh experts along with the 2,000 text pair tasks.
+
+**YouTube Instructional Video:**  
+[Watch the Assessment Instructions Video](https://youtu.be/2219IXAgBr4?si=gqLNDYQZulwyFBeY)
+
+After viewing the video, some experts reached out for clarifications. Three months later, all experts completed their assessments and submitted their results in an `info.txt` file. This video has been a crucial resource to ensure that all experts had a clear understanding of the evaluation criteria and process.
+
+---
+
 ## Contents
 
 - **Assessment Data Files:**  
@@ -115,7 +131,7 @@ The expert assessments demonstrate nearly perfect consensus (99.75% agreement) o
   With 97.15% of the translations deemed acceptable, the Google-translated Kazakh texts maintain their intended meaning with minimal discrepancies.
 
 - **Plagiarism Signal Preservation:**  
-  The translated texts retain the expected plagiarism patterns. In the original PAN dataset, 80% of the 2,000 text pairs were plagiarized, and after translation into Kazakh, experts assessed 80.5% of these texts as plagiarized. This minimal difference demonstrates that translation has little adverse impact on the detection signal.
+  The translated texts retain the expected plagiarism patterns. In the original PAN dataset, 80% of the 2,000 text pairs were plagiarized, and after translation into Kazakh, experts assessed 79.5% of these texts as plagiarized. This minimal difference demonstrates that translation has little adverse impact on the detection signal.
 
 - **Expert Consistency:**  
   The high inter-rater reliability (as evidenced by the 200 duplicated tasks) reinforces the robustness of the assessments, confirming the overall quality and suitability of the translated dataset for further use in the extrinsic plagiarism detection pipeline.
