@@ -52,7 +52,7 @@ The video includes a demonstration where five tasks were assessed as examples, i
 **YouTube Instructional Video:**  
 [Watch the Assessment Instructions Video](https://youtu.be/2219IXAgBr4?si=gqLNDYQZulwyFBeY)
 
-After viewing the video, some experts reached out for clarifications. Three months later, all experts completed their assessments and submitted their results in an `info.txt` file. This video has been a crucial resource to ensure that all experts had a clear understanding of the evaluation criteria and process.
+After viewing the video, some experts reached out for clarifications. Three months later, all experts completed their assessments and sent me back their results in `info.txt` files. This video has been a crucial resource to ensure that all experts had a clear understanding of the evaluation criteria and process.
 
 ---
 
