@@ -8,7 +8,7 @@ This folder contains the results and analysis of expert assessments for the Goog
 
 ## Background
 
-- **Dataset Origin:** About 30K plagiarized text pairs from the PAN corpus were translated into Kazakh using Google Translate.
+- **Dataset Origin:** About 30K extracted plagiarized text pairs from the PAN corpus were translated into Kazakh using Google Translate.
 - **Evaluation Sample:** 2,000 text pairs were selected for detailed expert assessment.
 - **Expert Panel:** Ten Kazakh experts each evaluated 200 pairs, with 200 pairs intentionally duplicated across assessments to ensure consistency and fairness.
 
