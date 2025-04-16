@@ -43,7 +43,7 @@ Each expert evaluated 200 text pairs, totaling 2,000 pairs. To check for inter-r
 ## Contents
 
 - **Assessment Data Files:**  
-  Raw text (instruction and info.txt) files containing the experts' ratings are organized within subfolders.
+  Raw text (instruction.txt and info.txt) files containing the experts' ratings are organized within subfolders.
 
 - **Assessment Script:**  
   A Python script (`assessment_code.py`) that processes the assessment files, calculates summary statistics, and generates detailed reports (including the summary CSV file).
