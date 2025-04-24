@@ -33,6 +33,16 @@ This folder contains detailed steps, scripts, and explanations for creating the 
 6. **Balancing & Shuffling:**  
    Balance the dataset and shuffle the pairs to create robust training and testing sets.
 
+## Expert Assessments
+
+Once the Kazakh translations were ready, we enlisted ten Kazakh language experts to validate both translation quality and plagiarism signals:
+
+- **2,000 text pairs** assessed (200 per expert, with 200 duplicates to check consistency).  
+- Two questions:  
+  1. Meaningfulness of the Kazakh version (0–2 scale)  
+  2. Similarity between suspicious and source documents (0–3 scale)
+- Full results, raw votes, processing code, and summaries live in the [kazakh-expert-assessments](./kazakh-expert-assessments) folder.
+
 ## Files
 
 - **[`1-dataset-preparation.ipynb`](1-dataset-preparation.ipynb):**  
