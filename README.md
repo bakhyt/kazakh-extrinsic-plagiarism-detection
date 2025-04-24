@@ -10,6 +10,7 @@ This repository offers a comprehensive solution for extrinsic plagiarism detecti
 - Detailed scripts, explanations, and a Jupyter notebook outlining the process of converting the original PAN plagiarism corpus into a Kazakh dataset.
 - Automated translation of English texts to Kazakh using the Google Translate API.
 - Precise alignment and labeling of text pairs.
+- **Expert Assessments:** Quality and plagiarism‐signal validation by 10 Kazakh experts (2,000 text pairs).
 
 ### [2. Dataset](2-dataset)
 - Cleaned, balanced, and labeled datasets prepared for training and evaluation.
