@@ -22,10 +22,10 @@ This folder contains the finalized datasets for training and evaluating **text s
 
 ## 📂 File Structure
 
-| Filename                   | Description                                                                                         |
-| -------------------------- | --------------------------------------------------------------------------------------------------- |
-| `train-balanced-20000.csv` | Final preprocessed **Kazakh and English** training dataset (20K pairs; balanced, labeled, shuffled) |
-| `test-balanced-4562.csv`   | Final **testing dataset** for Kazakh and English (balanced, labeled, and cleaned)                   |
+| Filename                                                                 | Description                                                                                         |
+| ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| [`train-balanced-20000.csv`](sandbox:/mnt/data/train-balanced-20000.csv) | Final preprocessed **Kazakh and English** training dataset (20K pairs; balanced, labeled, shuffled) |
+| [`test-balanced-4562.csv`](sandbox:/mnt/data/test-balanced-4562.csv)     | Final **testing dataset** for Kazakh and English (balanced, labeled, and cleaned)                   |
 
 ---
 
