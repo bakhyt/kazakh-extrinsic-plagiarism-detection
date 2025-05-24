@@ -1,141 +1,137 @@
 ### 📁 `1-dataset-preparation/kazakh-expert-assessments/` Folder
 
-# Expert Assessments of Translated Datasets
+# Expert Assessments of Translated Dataset
 
-This folder contains the results and analysis of expert assessments for the Google-translated PAN plagiarism dataset from English to Kazakh. These evaluations verify both the translation quality and the preservation of plagiarism signals in the Kazakh version of the dataset.
-
----
-
-## Background
-
-- **Dataset Origin:** About 30K extracted plagiarized text pairs from the PAN corpus were translated into Kazakh using Google Translate.
-- **Evaluation Sample:** 2,000 text pairs were selected for detailed expert assessment.
-- **Expert Panel:** Ten Kazakh experts each evaluated 200 pairs, with 200 pairs intentionally duplicated across assessments to ensure consistency and fairness.
+This folder contains the results and analysis of expert evaluations for the Google-translated PAN plagiarism dataset, translated from English into Kazakh. These evaluations assess both the **translation quality** and the **preservation of plagiarism signals** in the Kazakh version.
 
 ---
 
-## Assessment Methodology
+## 📚 Background
 
-Kazakh experts evaluated the translated text pairs based on two key questions:
-
-### 1. Meaningfulness of the Kazakh Version
-
-- **Objective:** Determine whether the translated text is meaningful.
-- **Scoring:**
-  - **0:** Not meaningful.
-  - **1:** Meaningful but with mistakes or sounding unnatural.
-  - **2:** Fully meaningful.
-
-### 2. Similarity Between the Kazakh Suspicious-Document and Kazakh Source-Document
-
-- **Objective:** Assess the degree of similarity between the paired documents.
-- **Scoring:**
-  - **0:** Dissimilar – Unrelated texts or only slight context overlap.
-  - **1:** Similar – Texts share the same general topic but have significant differences (e.g., one text may include details that the other omits).
-  - **2:** Very Similar – Texts convey nearly the same meaning, though some important differences exist.
-  - **3:** Identical – Texts are essentially identical in meaning (minor stylistic differences are acceptable).
-
-*Note:*  
-Each expert evaluated 200 text pairs, totaling 2,000 pairs. To check for inter-rater reliability, 200 pairs were duplicated across assessments.
+* **Dataset Origin**: Approximately 30,000 plagiarized text pairs were extracted from the PAN corpus and translated into Kazakh using Google Translate.
+* **Evaluation Sample**: A subset of 2,000 pairs was selected for expert assessment.
+* **Expert Panel**: Ten native Kazakh speakers participated. Each evaluated 200 pairs, with 200 pairs duplicated across annotators to assess consistency.
 
 ---
 
-## Assessment Instructions Video
+## 🧪 Assessment Methodology
 
-To ensure consistency and clarity in the evaluation process, a 40-minute instructional video was prepared. In this video, I explained the assessment process for the translated plagiarized texts, detailing how to answer the two key questions:
+Each Kazakh expert evaluated two aspects of the translated suspicious–source text pairs:
 
-1. **Meaningfulness of the Kazakh Version**
-2. **Similarity between the Kazakh Suspicious-Document and Kazakh Source-Document**
+### 1. Translation Meaningfulness
 
-The video includes a demonstration where five tasks were assessed as examples, illustrating the correct approach to the evaluation. The video was uploaded to YouTube and shared with all 10 Kazakh experts along with the 2,000 text pair tasks.
+* **Goal**: Assess whether the translated Kazakh text is understandable and faithful.
+* **Scale**:
 
-**YouTube Instructional Video:**  
-[Watch the Assessment Instructions Video](https://youtu.be/2219IXAgBr4?si=gqLNDYQZulwyFBeY)
+  * `0` – Not meaningful
+  * `1` – Imperfect but understandable
+  * `2` – Fully meaningful
 
-After viewing the video, some experts reached out for clarifications. Three months later, all experts completed their assessments and sent me back their results in `info.txt` files. This video has been a crucial resource to ensure that all experts had a clear understanding of the evaluation criteria and process.
+### 2. Plagiarism Similarity
 
----
+* **Goal**: Determine the degree of similarity between the Kazakh suspicious and source documents.
+* **Scale**:
 
-## Contents
+  * `0` – Dissimilar
+  * `1` – Similar (same topic, but differing details)
+  * `2` – Very similar (some differences, but nearly same meaning)
+  * `3` – Identical (same meaning, minor stylistic differences allowed)
 
-- **Assessment Data Files:**  
-  - Raw text files (e.g., `instruction.txt` and `info.txt`) containing experts' ratings are organized within subfolders.
-  - Compressed file of all raw assessments: [kazakh-experts-evaluation.zip](./kazakh-experts-evaluation.zip)
-
-- **Assessment Script:**  
-  - A Python notebook that processes the assessment files, calculates summary statistics, and generates detailed reports: [1-1-translation-assessments-summary.ipynb](./1-1-translation-assessments-summary.ipynb)
-
-- **Summary CSV Files:**  
-  - Overall translation quality (2000 tasks): [first-question-2000-tasks-summary.csv](./first-question-2000-tasks-summary.csv)  
-  - Overall plagiarism detection (2000 tasks): [second-question-2000-tasks-summary.csv](./second-question-2000-tasks-summary.csv)
-  - Detailed evaluation on duplicated tasks (200 tasks):
-    - [first-question-20-shared-tasks-summary.csv](./first-question-20-shared-tasks-summary.csv)
-    - [second-question-20-shared-tasks-summary.csv](./second-question-20-shared-tasks-summary.csv)
+*Note: 200 of the 2,000 examples were intentionally duplicated to measure inter-rater consistency.*
 
 ---
 
-## Results Summary
+## 🎥 Assessment Instructions
 
-### 1. Translation Quality Assessment (Question 1)
+A 40-minute instructional video was created to guide experts through the evaluation process. It includes:
 
-**Overall Results (2,000 Texts):**
+* An explanation of the two questions
+* Step-by-step demonstrations with five example assessments
 
-- **Accepted Translations (Scores 1 or 2):** 97.15% (1,943 texts)  
-  *Nearly all translations met quality standards.*
-- **Disputed Translations (Score 0):** 2.85% (57 texts)  
-  *A small portion were flagged as problematic.*
+📺 **[Watch the video on YouTube](https://youtu.be/2219IXAgBr4?si=gqLNDYQZulwyFBeY)**
 
-**Detailed Assessment on 200 Duplicated Tasks:**
-
-- **Full Agreement (Identical Scores):** 48.5%
-- **Partial Agreement (Minor Differences, ±1 point):** 49.0%
-- **Disagreement (Significant Differences):** 2.5%
-
-*Key Findings:*  
-Over 97% of the translations were deemed acceptable, demonstrating high reliability in the Google-translated Kazakh texts. The duplicated tasks confirm strong inter-rater consistency, with only 2.5% showing significant discrepancies.
+The video was shared with all ten experts before they began the evaluation task. Clarifications were provided as needed, and assessments were completed within three months.
 
 ---
 
-### 2. Plagiarism Detection Assessment (Question 2)
+### 📂 Folder Contents
 
-**Overall Results (2,000 Texts):**
+* **Expert Ratings**:
 
-- **Plagiarized Texts (Combined Rating):** Approximately 79.5%  
-  *This aligns closely with the expected 80% from the English PAN corpus.*
-- **Non-Plagiarized Texts:**  
-  - Experts: 20.5%  
-  - Expected (English PAN): 20%
+  * Raw `.txt` files (`instruction.txt`, `info.txt`) containing expert scores are organized in subfolders.
+  * Compressed archive of all submissions: [`kazakh-experts-evaluation.zip`](./kazakh-experts-evaluation.zip)
 
-**Granular Breakdown of Plagiarism Levels:**
+* **Processing Code**:
 
-- **Non-Plagiarized:** ~20.5%
-- **Partially Plagiarized:** ~22.5%
-- **Mostly Plagiarized:** ~28.0%
-- **Fully Plagiarized:** ~29.5%
+  * The notebook that parses expert files, computes agreement metrics, and summarizes results is located in the parent folder:
+    [`../1-1-translation-assessments-summary.ipynb`](../1-1-translation-assessments-summary.ipynb)
 
-**Detailed Evaluation on 200 Duplicated Tasks:**
+* **Summary CSVs**:
 
-- **Non-Plagiarized:** 20.0%
-- **Partially Plagiarized:** 22.5%
-- **Mostly Plagiarized:** 28.0%
-- **Fully Plagiarized:** 29.5%
+  * Translation quality (Q1): [`first-question-2000-tasks-summary.csv`](./first-question-2000-tasks-summary.csv)
+  * Plagiarism detection (Q2): [`second-question-2000-tasks-summary.csv`](./second-question-2000-tasks-summary.csv)
+  * Duplicated task evaluations:
 
-*Key Insights:*  
-The expert assessments demonstrate nearly perfect consensus (99.75% agreement) on the non-plagiarized texts. A small 0.5% increase in non-plagiarized texts (20% vs. 20.5%) indicates that in a few cases, partial plagiarism signals were weakened during translation. The clear gradation in plagiarism severity confirms that experts reliably distinguish between partial, mostly, and fully plagiarized content.
+    * [`first-question-20-shared-tasks-summary.csv`](./first-question-20-shared-tasks-summary.csv)
+    * [`second-question-20-shared-tasks-summary.csv`](./second-question-20-shared-tasks-summary.csv)
 
 ---
 
-## Overall Conclusions
+## 📈 Results Summary
 
-- **Translation Quality:**  
-  With 97.15% of the translations deemed acceptable, the Google-translated Kazakh texts maintain their intended meaning with minimal discrepancies.
+### Translation Quality (Q1)
 
-- **Plagiarism Signal Preservation:**  
-  The translated texts retain the expected plagiarism patterns. In the original PAN dataset, 80% of the 2,000 text pairs were plagiarized, and after translation into Kazakh, experts assessed 79.5% of these texts as plagiarized. This minimal difference demonstrates that translation has little adverse impact on the detection signal.
+**Full Set (2,000 Pairs)**:
 
-- **Expert Consistency:**  
-  The high inter-rater reliability (as evidenced by the 200 duplicated tasks) reinforces the robustness of the assessments, confirming the overall quality and suitability of the translated dataset for further use in the extrinsic plagiarism detection pipeline.
+* Accepted (Score 1 or 2): **97.15%**
+* Not meaningful (Score 0): **2.85%**
+
+**On 200 Duplicated Tasks**:
+
+* Identical scores: **48.5%**
+* ±1-point differences: **49.0%**
+* Major disagreements: **2.5%**
+
+🔹 *Conclusion*: High translation reliability, with only 2.85% requiring revision and strong inter-annotator alignment.
 
 ---
 
-These expert assessments provide valuable validation for the translated dataset, ensuring its quality for training and evaluation in our Kazakh extrinsic plagiarism detection project.
+### Plagiarism Detection (Q2)
+
+**Full Set (2,000 Pairs)**:
+
+* Plagiarized: **\~79.5%**
+* Non-plagiarized: **\~20.5%**
+
+**Breakdown of Plagiarism Severity**:
+
+* Non-plagiarized: \~20.5%
+* Partially plagiarized: \~22.5%
+* Mostly plagiarized: \~28.0%
+* Fully plagiarized: \~29.5%
+
+**On 200 Duplicated Tasks**: Same distribution observed.
+
+🔹 *Conclusion*: Label distribution closely matches the original PAN corpus (80% plagiarized), indicating strong preservation of the plagiarism signal during translation.
+
+---
+
+## 🔍 Inter-Annotator & Human–Gold Agreement
+
+Agreement was evaluated using **Cohen’s kappa**\~\cite{cohen1960coefficient}:
+
+| Comparison Type                   | Observed Agreement | Cohen’s Kappa |
+| --------------------------------- | ------------------ | ------------- |
+| Human–Human (Q1 - Meaningfulness) | 0.975              | 0.95          |
+| Human–Human (Q2 - Plagiarism)     | 1.00               | 1.00          |
+| Human–Original (Q2 - Plagiarism)  | \~0.99             | \~0.98        |
+
+---
+
+## ✅ Overall Conclusions
+
+* **Translation Quality**: 97.15% of translated texts are acceptable.
+* **Plagiarism Preservation**: Translations retain plagiarism structure almost exactly (79.5% vs. original 80%).
+* **Expert Consistency**: Extremely high inter-rater agreement confirms the validity and consistency of human annotations.
+
+These results affirm that the translated dataset is a high-quality resource for Kazakh extrinsic plagiarism detection research and model development.
