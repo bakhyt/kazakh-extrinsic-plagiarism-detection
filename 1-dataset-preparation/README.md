@@ -2,52 +2,61 @@
 
 # Dataset Preparation
 
-This folder contains detailed steps, scripts, and explanations for creating the **Kazakh Extrinsic Plagiarism Detection Dataset**.
+This folder contains the complete pipeline, scripts, and explanations for creating the **Kazakh Extrinsic Plagiarism Detection Dataset**.
 
 ## Overview
 
-- **Source Data:**  
-  Derived from the original [PAN Plagiarism Detection Corpus](https://pan.webis.de/).
+* **Source Data**
+  The dataset is derived from the official [PAN Plagiarism Detection Corpus](https://pan.webis.de/), which provides annotated plagiarism cases in English.
 
-- **English Plagiarism Identification:**  
-  English plagiarism cases were identified using XML metadata provided by the PAN corpus.
+* **English Plagiarism Identification**
+  Plagiarized text segments were extracted from the PAN XML metadata, which contains detailed alignment information between suspicious and source documents.
 
-- **Kazakh Translation:**  
-  Identified English text pairs (suspicious and source texts) were automatically translated into Kazakh using the **Google Translate API**.
+* **Kazakh Translation**
+  The extracted English suspicious–source text pairs were automatically translated into Kazakh using the **Google Translate API**, preserving structural alignment.
 
-- **Data Alignment:**  
-  Both the original English and translated Kazakh text pairs were carefully aligned, labeled (plagiarized or non-plagiarized), cleaned, and shuffled.
+* **Data Alignment**
+  Each translated Kazakh pair was aligned with its English counterpart. All pairs were labeled as either plagiarized (`1`) or non-plagiarized (`0`), then cleaned and shuffled for robustness.
 
 ## Preparation Workflow
 
-1. **Extract Plagiarized Pairs:**  
-   Parse the PAN XML files to extract potential plagiarized text pairs.
-2. **Automatic Translation:**  
-   Translate the English texts into Kazakh using the Google Translate API.
-3. **Match and Organize:**  
-   Align the translated Kazakh texts with their original English counterparts.
-4. **Labeling:**  
-   Assign labels to each aligned pair (`1` for plagiarized, `0` for non-plagiarized).
-5. **Cleaning & Deduplication:**  
-   Remove duplicates and clean the text pairs to ensure data quality.
-6. **Balancing & Shuffling:**  
-   Balance the dataset and shuffle the pairs to create robust training and testing sets.
+1. **Extract Plagiarized Pairs**
+   Parse PAN XML files to collect aligned English text segments for plagiarism cases.
+
+2. **Automatic Translation**
+   Translate both suspicious and source segments into Kazakh using the Google Translate API, preserving the pair structure.
+
+3. **Match and Organize**
+   Pair the translated Kazakh texts with their original English counterparts while keeping alignment intact.
+
+4. **Labeling**
+   Assign binary labels to each pair: `1` for plagiarized, `0` for non-plagiarized.
+
+5. **Cleaning and Deduplication**
+   Filter out duplicates, normalize spacing, and clean formatting artifacts.
+
+6. **Balancing and Shuffling**
+   Balance the number of plagiarized and non-plagiarized pairs and shuffle the dataset to prepare for model training and evaluation.
 
 ## Expert Assessments
 
-Once the Kazakh translations were ready, we enlisted ten Kazakh language experts to validate both translation quality and plagiarism signals:
+To evaluate translation quality and annotation reliability, we conducted a human validation study involving ten native Kazakh speakers:
 
-- **2,000 text pairs** assessed (200 per expert, with 200 duplicates to check consistency).  
-- Two questions:  
-  1. Meaningfulness of the Kazakh version (0–2 scale)  
-  2. Similarity between suspicious and source documents (0–3 scale)
-- Full results, raw votes, processing code, and summaries live in the [kazakh-expert-assessments](./kazakh-expert-assessments) folder.
+* **Sample Size**: 2,000 Kazakh text pairs (including 200 intentionally duplicated examples to measure consistency).
+* **Annotation Criteria**:
 
-## Files
+  1. **Translation Meaningfulness** (scale: 0 = not meaningful, 2 = fully meaningful)
+  2. **Plagiarism Similarity** (scale: 0 = not similar, 3 = highly similar)
+* **Results**:
+  Inter-annotator agreement was computed using **Cohen’s kappa**, with full implementation provided in the notebook
+  [`1-1-calculating-expert-assessments.ipynb`](./1-1-calculating-expert-assessments.ipynb).
+  Raw annotations, agreement metrics, and result summaries are available in the [`kazakh-expert-assessments`](./kazakh-expert-assessments) folder.
 
-- **[`1-dataset-preparation.ipynb`](1-dataset-preparation.ipynb):**  
-  A Jupyter notebook detailing the dataset creation and preprocessing pipeline, complete with step-by-step explanations.
+## Key Files
+
+* **[`1-dataset-preparation.ipynb`](1-dataset-preparation.ipynb)**
+  Main notebook containing the end-to-end dataset creation process, including parsing, translation, alignment, and cleaning.
 
 ## Outputs
 
-The cleaned, labeled, and finalized datasets are available in the [`2-dataset`](../2-dataset) folder and are ready for use in model training and evaluation.
+The finalized and labeled datasets are saved in the [`2-dataset`](../2-dataset) folder. These datasets are ready for downstream model training, validation, and benchmarking tasks.
