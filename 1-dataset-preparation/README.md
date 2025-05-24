@@ -49,7 +49,7 @@ To evaluate translation quality and annotation reliability, we conducted a human
   2. **Plagiarism Similarity** (scale: 0 = not similar, 3 = highly similar)
 * **Results**:
   Inter-annotator agreement was computed using **Cohen’s kappa**, with full implementation provided in the notebook
-  [`1-1-calculating-expert-assessments.ipynb`](./1-1-calculating-expert-assessments.ipynb).
+  [`1-1-translation-assessments-summary.ipynb`](./1-1-translation-assessments-summary.ipynb).
   Raw annotations, agreement metrics, and result summaries are available in the [`kazakh-expert-assessments`](./kazakh-expert-assessments) folder.
 
 ## Key Files
