@@ -63,7 +63,7 @@ After viewing the video, some experts reached out for clarifications. Three mont
   - Compressed file of all raw assessments: [kazakh-experts-evaluation.zip](./kazakh-experts-evaluation.zip)
 
 - **Assessment Script:**  
-  - A Python notebook that processes the assessment files, calculates summary statistics, and generates detailed reports: [translation-assessments-summary.ipynb](./translation-assessments-summary.ipynb)
+  - A Python notebook that processes the assessment files, calculates summary statistics, and generates detailed reports: [1-1-translation-assessments-summary.ipynb](./1-1-translation-assessments-summary.ipynb)
 
 - **Summary CSV Files:**  
   - Overall translation quality (2000 tasks): [first-question-2000-tasks-summary.csv](./first-question-2000-tasks-summary.csv)  
