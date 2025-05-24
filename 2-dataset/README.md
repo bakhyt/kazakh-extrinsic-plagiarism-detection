@@ -22,8 +22,8 @@ This folder contains the finalized datasets for training and evaluating **text s
 
 | Filename                                                                 | Description                                                                                         |
 | ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
-| [`train-balanced-20000.csv`](./2-dataset/train-balanced-20000.csv)       | Final preprocessed **Kazakh and English** training dataset (20K pairs; balanced, labeled, shuffled) |
-| [`test-balanced-4562.csv`](./2-dataset/test-balanced-4562.csv)           | Final **testing dataset** for Kazakh and English (balanced, labeled, and cleaned)                   |
+| [`train-balanced-20000.csv`](./train-balanced-20000.csv)       | Final preprocessed **Kazakh and English** training dataset (20K pairs; balanced, labeled, shuffled) |
+| [`test-balanced-4562.csv`](./test-balanced-4562.csv)           | Final **testing dataset** for Kazakh and English (balanced, labeled, and cleaned)                   |
 
 ---
 
