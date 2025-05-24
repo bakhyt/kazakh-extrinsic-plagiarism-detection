@@ -2,29 +2,34 @@
 
 # Dataset
 
-This folder contains the finalized datasets for training and evaluating text similarity and plagiarism detection models in both Kazakh and English.
+This folder contains the finalized datasets for training and evaluating **text similarity** and **plagiarism detection** models in both **Kazakh** and **English**.
 
-## Datasets Overview
+---
 
-- **Training Dataset:**
-  - Contains 120K text pairs for each language (Kazakh and English).
-  - Each dataset is labeled (plagiarized/non-plagiarized), balanced, shuffled, and thoroughly cleaned.
+## 📊 Datasets Overview
 
-- **Testing Dataset:**
-  - Comprises approximately 4000 sentence pairs.
-  - Meticulously balanced and cleaned to ensure reliable benchmarking.
+* **Training Dataset**
 
-## File Structure
+  * Contains **20,000 text pairs** for each language (Kazakh and English).
+  * Each dataset is labeled (`1` = plagiarized, `0` = non-plagiarized), balanced, shuffled, and thoroughly cleaned.
 
-| Filename                                     | Description                                                                 |
-|----------------------------------------------|-----------------------------------------------------------------------------|
-| `kz_dataset_120K_ready_for_training.csv`     | Final preprocessed **Kazakh** training dataset (120K pairs; balanced, labeled, shuffled) |
-| `en_dataset_120K_ready_for_training.csv`     | Final preprocessed **English** training dataset (120K pairs; balanced, labeled, shuffled) |
-| `kz-3950-sentences-for-testing1.csv`         | Testing dataset for Kazakh (labeled and balanced)                           |
-| `en-4500-sentences-for-testing6.csv`         | Testing dataset for English (labeled and balanced)                          |
+* **Testing Dataset**
+
+  * Consists of **4,562 labeled text pairs**.
+  * Carefully balanced and cleaned to ensure reliable and fair benchmarking.
+
+---
+
+## 📂 File Structure
+
+| Filename                   | Description                                                                                         |
+| -------------------------- | --------------------------------------------------------------------------------------------------- |
+| `train-balanced-20000.csv` | Final preprocessed **Kazakh and English** training dataset (20K pairs; balanced, labeled, shuffled) |
+| `test-balanced-4562.csv`   | Final **testing dataset** for Kazakh and English (balanced, labeled, and cleaned)                   |
 
 ---
 
 ### ⚠️ Note on Availability
 
-Due to copyright or research policy constraints, some datasets may not be publicly shared in this repository. Please contact the repository maintainer if you require access.
+Due to copyright or research policy constraints, some datasets may not be publicly available in this repository.
+Please contact the repository maintainer if you require access.
