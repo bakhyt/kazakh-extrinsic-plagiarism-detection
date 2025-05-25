@@ -1,3 +1,4 @@
+## 📁 `4-plagiarism-detection-pipeline-and-evaluation/` Folder
 
 ## 🧪 Plagiarism Detection Pipeline and Evaluation
 
