@@ -2,51 +2,80 @@
 
 # Kazakh Extrinsic Plagiarism Detection
 
-This repository offers a comprehensive solution for extrinsic plagiarism detection in the Kazakh language. It includes datasets, code, and methodologies that leverage advanced Natural Language Processing (NLP) techniques—such as transformer-based models and algorithms—to compare suspicious texts against a repository of potential source texts.
+This repository presents a comprehensive, end-to-end solution for **extrinsic plagiarism detection in the Kazakh language**. It includes curated datasets, expert annotations, model training scripts, evaluation benchmarks, and a scalable detection pipeline—specifically designed to support low-resource NLP tasks using modern transformer-based architectures.
+
+---
 
 ## 📂 Repository Structure
 
 ### [1. Dataset Preparation](1-dataset-preparation)
-- Detailed scripts, explanations, and a Jupyter notebook outlining the process of converting the original PAN plagiarism corpus into a Kazakh dataset.
-- Automated translation of English texts to Kazakh using the Google Translate API.
-- Precise alignment and labeling of text pairs.
-- **Expert Assessments:** Quality and plagiarism‐signal validation by 10 Kazakh experts (2,000 text pairs).
+
+* Scripts and explanations for converting the PAN plagiarism corpus into a parallel Kazakh dataset.
+* Automatic translation of English suspicious–source pairs into Kazakh using the Google Translate API.
+* Precise alignment, cleaning, and binary labeling of suspicious–source text pairs.
+* **Expert validation** by 10 native Kazakh speakers on 2,000 translated pairs to assess translation quality and preservation of plagiarism signals.
 
 ### [2. Dataset](2-dataset)
-- Cleaned, balanced, and labeled datasets prepared for training and evaluation.
-- Separate files for training and testing datasets.
 
-### [3. Model Training](3-model-training)
-- Scripts, notebooks, and detailed instructions for training transformer models on the Kazakh plagiarism detection dataset.
-- Optimized hyperparameters and training configurations for each model architecture.
+* Finalized and cleaned **Kazakh** datasets:
 
-### [4. Model Evaluation](4-model-evaluation)
-- Comprehensive benchmarking of trained models using metrics such as accuracy, precision, recall, and F1-score.
-- Comparative analysis to determine the best-performing model for the Kazakh extrinsic plagiarism detection pipeline.
+  * **20,000 training pairs**
+  * **4,562 testing pairs**
+* Balanced, labeled, and ready for use in model training and evaluation.
 
-### [5. Plagiarism Detection Pipeline](5-plagiarism-detection-pipeline)
-- Implementation of a practical, scalable plagiarism detection pipeline based on the trained transformer models.
-- Designed for efficient detection in large-scale document collections.
+### [3. Model Training and Evaluation](3-model-training-and-evaluation)
 
-### [6. Pipeline Evaluation](6-pipeline-evaluation)
-- End-to-end evaluation of the plagiarism detection pipeline, demonstrating its effectiveness and real-world applicability.
+* Training and benchmarking of multiple transformer-based models on the Kazakh dataset.
+* Includes models such as XLM-RoBERTa (Large/Base), KazakhBERTmulti, SBERT, DistilBERT, and MiniLM.
+* A single **English-trained XLM-RoBERTa Large model** is used as a benchmark to assess the performance gap between high-resource and low-resource settings.
+* Contains a unified notebook for training, evaluation, and performance comparison.
+
+### [4. Plagiarism Detection Pipeline and Evaluation](4-plagiarism-detection-pipeline-and-evaluation)
+
+* Implementation of a scalable, two-stage plagiarism detection system.
+* Integrates lexical similarity techniques (e.g., SimHash, TF-IDF) with transformer-based semantic models.
+* **Evaluation Setup**:
+
+  * A realistic test set of **1,000 suspicious–source document pairs** was randomly selected from the original PAN dataset.
+  * Each pair contains true plagiarism cases and was translated into Kazakh.
+  * A CSV file stores: (1) full suspicious document, (2) full source document, and (3) the gold-standard plagiarized segments from the PAN XML.
+* **Evaluation Procedure**:
+
+  * For each row, the pipeline detects plagiarized spans and compares them to the gold-standard.
+  * Precision, recall, and F1-score are computed at the **word level**.
+* **Final Output**:
+
+  * The system calculates the **average precision**, **average recall**, and **average F1-score** over all 1,000 document pairs.
+* This evaluation framework reflects the pipeline's ability to detect plagiarism in real-world Kazakh texts.
+
+---
 
 ## 🎯 Objectives
-- Develop robust NLP-based methods specifically tailored for detecting extrinsic plagiarism in Kazakh.
-- Provide high-quality, openly available datasets to support the Kazakh NLP research community.
-- Benchmark state-of-the-art transformer models for improved accuracy in plagiarism detection.
+
+* Develop a high-quality plagiarism detection framework tailored to the **Kazakh language**.
+* Benchmark state-of-the-art transformer models for semantic similarity and detection accuracy.
+* Contribute openly available resources to advance **Kazakh NLP** and low-resource language research.
+
+---
 
 ## ✅ Conclusion and Future Work
 
-This project successfully establishes a robust framework for detecting extrinsic plagiarism in Kazakh texts by:
-- **Preparing and labeling a comprehensive Kazakh dataset.**
-- **Training and evaluating state-of-the-art transformer-based models**, achieving strong performance across key metrics.
-- **Developing a scalable plagiarism detection pipeline** to identify plagiarism efficiently in extensive document collections.
+This project successfully:
+
+* **Prepared and validated a comprehensive Kazakh extrinsic plagiarism dataset**
+* **Trained and benchmarked multiple transformer models**, identifying the most effective for Kazakh
+* **Built and evaluated a scalable detection pipeline** suited for practical deployment
+
+---
 
 ### 🚀 Future Directions
-- Enhance detection accuracy through advanced fine-tuning strategies and next-generation transformer architectures.
-- Explore multilingual and cross-lingual plagiarism detection to broaden the pipeline’s applicability.
-- Integrate the pipeline into practical applications, such as educational platforms and solutions for the publishing industry.
+
+* Improve performance through advanced fine-tuning, longer sequence handling, and ensemble modeling
+* Expand the system for **multilingual and cross-lingual plagiarism detection**
+* Integrate the solution into real-world platforms used in education, research, and publishing
+
+---
 
 ## 📬 Contact
-For questions, suggestions, or collaboration inquiries, please reach out via email or open an issue on GitHub.
+
+For questions, feedback, or collaboration inquiries, please reach out via email or [open an issue](https://github.com/your-username/kazakh-extrinsic-plagiarism-detection/issues) on GitHub.
