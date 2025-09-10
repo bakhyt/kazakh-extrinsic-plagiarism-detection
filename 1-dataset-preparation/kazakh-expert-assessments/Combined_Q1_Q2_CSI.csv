@@ -1,0 +1,21 @@
+N,Files,Q1 Majority,Q1 Votes,Q1 CSI%,Q2 Majority,Q2 Votes,Q2 CSI%
+1,suspicious-document00024-555430-555661 | source-document10255-390392-390619,12,5,50,20,10,100
+2,suspicious-document00157-7016-7263 | source-document06872-366457-366701,12,6,60,23,9,90
+3,suspicious-document00254-953100-953301 | source-document10879-159842-160073,12,5,50,20,10,100
+4,suspicious-document00700-77922-78148 | source-document10756-3246-3504,12,6,60,20,10,100
+5,suspicious-document00942-578142-578366 | source-document09641-48054-48288,12,5,50,20,10,100
+6,suspicious-document02996-420255-420506 | source-document02159-25158-25411,12,7,70,22,6,60
+7,suspicious-document03107-90709-90965 | source-document10184-2691-2951,12,6,60,22,5,50
+8,suspicious-document04543-505705-505937 | source-document02765-3681-3906,11,6,60,23,4,40
+9,suspicious-document05097-17653-17880 | source-document10256-15862-16095,12,7,70,23,5,50
+10,suspicious-document05388-6143-6354 | source-document02751-215598-215836,11,6,60,21,6,60
+11,suspicious-document06551-13658-13911 | source-document02759-69511-69754,12,6,60,22,5,50
+12,suspicious-document06619-225171-225395 | source-document02765-3681-3906,12,6,60,23,6,60
+13,suspicious-document07659-248666-248890 | source-document02765-3681-3906,12,6,60,23,7,70
+14,suspicious-document08140-12996-13206 | source-document04741-11740-11966,12,6,60,21,4,40
+15,suspicious-document08761-141026-141260 | source-document09718-17882-18121,11,9,90,22,5,50
+16,suspicious-document08964-1839648-1839846 | source-document09358-23865-24124,11,6,60,21,7,70
+17,suspicious-document08994-232869-233093 | source-document02765-3681-3906,12,6,60,22,5,50
+18,suspicious-document09368-13094-13344 | source-document08433-1545-1779,11,6,60,21,5,50
+19,suspicious-document10171-207957-208191 | source-document02765-3681-3906,12,5,50,22,4,40
+20,suspicious-document10252-5106-5316 | source-document09152-1865-2099,11,8,80,21,5,50
