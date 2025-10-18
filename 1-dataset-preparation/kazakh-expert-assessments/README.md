@@ -9,7 +9,7 @@ This folder contains native-speaker evaluations of the Google-translated **PAN 2
 
 ## 📚 Background
 
-* **Dataset origin:** ~30k suspicious–source pairs from PAN 2010, translated to Kazakh (Google Translate) with manual alignment.
+* **Dataset origin:** more than 20k suspicious–source pairs from PAN 2010, translated to Kazakh (Google Translate) with manual alignment.
 * **Evaluation sample:** 2,000 pairs.
 * **Expert panel:** 10 native Kazakh speakers; each evaluated 200 pairs. **200 pairs were duplicated** to measure agreement.
 
