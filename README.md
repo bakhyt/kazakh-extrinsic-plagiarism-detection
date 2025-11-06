@@ -79,3 +79,6 @@ This project successfully:
 ## 📬 Contact
 
 For questions, feedback, or collaboration inquiries, please reach out via email or [open an issue](https://github.com/your-username/kazakh-extrinsic-plagiarism-detection/issues) on GitHub.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17538305.svg)](https://doi.org/10.5281/zenodo.17538305)
+
