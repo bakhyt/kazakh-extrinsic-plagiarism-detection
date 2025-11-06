@@ -1,0 +1,10 @@
+**Access Policy.**
+This archive contains code and metadata released under an open license. A subset of data files (e.g., text pairs derived from the PAN 2010 corpus and/or materials subject to third-party rights) are **restricted** to respect copyright and institutional research policies. Researchers and educators may request access **for non-commercial, academic use** via the Zenodo “Request access” button on the record page. In your request, please include (i) affiliation, (ii) intended use, and (iii) a brief statement confirming compliance with fair-use/ethical guidelines and that you will not redistribute the restricted files. By accessing the data you agree to: (1) use it only for research/education, (2) **cite** this release as **doi:10.5281/zenodo.17538305**, (3) refrain from re-publishing source texts or creating public mirrors of restricted content, and (4) comply with any upstream licenses or terms referenced in the metadata. Aggregated statistics and code remain openly available to facilitate reproducibility even without the restricted files.
+
+@dataset{PAN_KK_zenodo_17538305,
+  title   = {PAN--KK: Kazakh Extrinsic Plagiarism Dataset and Code},
+  year    = {2025},
+  doi     = {10.5281/zenodo.17538305},
+  url     = {https://doi.org/10.5281/zenodo.17538305},
+  note    = {Versioned Zenodo release. Please cite this DOI.}
+}
