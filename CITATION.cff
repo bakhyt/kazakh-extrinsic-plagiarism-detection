@@ -1,0 +1,11 @@
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+author:
+- family-names: Bakiyev
+  given-names: Bakhyt
+orcid: https://orcid.org/0000-0002-7585-6626
+title:bakhyt/kazakh-extrinsic-plagiarism-detection: PAN-KK: Code and Experiment Scripts (v1.0.0)
+version: v0.2.0-alpha
+date-released: 2025-11-06
+
+URL: https://doi.org/10.5281/zenodo.17538305
