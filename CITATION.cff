@@ -9,3 +9,22 @@ version: 1.0.1
 doi: 10.5281/zenodo.17538305
 date-released: 2025-11-06
 url: "https://github.com/bakhyt/kazakh-extrinsic-plagiarism-detection"
+
+@software{Lisa_My_Research_Software_2017,
+  author = {Bakiyev, Bakhyt},
+  doi = {10.5281/zenodo.17538305},
+  month = {11},
+  title = {{PAN-KK: kazakh-extrinsic-plagiarism-detection dataset and its use}},
+  url = {https://github.com/github-linguist/linguist},
+  version = {1.0.1},
+  year = {2025}
+}
+
+@dataset{PAN_KK_zenodo_17538305,
+  title   = {PAN--KK: Kazakh Extrinsic Plagiarism Dataset and Code},
+  author = {Bakiyev, Bakhyt},
+  year    = {2025},
+  doi     = {10.5281/zenodo.17538305},
+  url     = {https://doi.org/10.5281/zenodo.17538305},
+  note    = {Versioned Zenodo release. Please cite this DOI.}
+}
