@@ -1,11 +1,26 @@
-cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
-authors:
-- family-names: "Bakiyev"
-  given-names: "Bakhyt"
-  orcid: "https://orcid.org/0000-0002-7585-6626"
-title: "PAN-KK: kazakh-extrinsic-plagiarism-detection dataset and its use"
-version: 1.0.1
-doi: 10.5281/zenodo.17538305
-date-released: 2025-11-06
-url: "https://github.com/bakhyt/kazakh-extrinsic-plagiarism-detection"
+## 📄 Publication
+
+This project is associated with the following published paper:
+
+**Bakiyev, B., Kovatchev, V., & Ali, M. (2026). PAN-KK: A Language Resource for Plagiarism Detection in Low-Resource Kazakh. Procedia Computer Science, 275, 28–37.**  
+ISSN: 1877-0509  
+DOI: https://doi.org/10.1016/j.procs.2026.01.005  
+ScienceDirect: https://www.sciencedirect.com/science/article/pii/S1877050926000050
+
+## 📚 Citation
+
+If you use this repository, dataset materials, code, or experimental results, please cite:
+
+```bibtex
+@article{bakiyev2026pankk,
+  title={PAN-KK: A Language Resource for Plagiarism Detection in Low-Resource Kazakh},
+  author={Bakiyev, Bakhyt and Kovatchev, Venelin and Ali, Mubashir},
+  journal={Procedia Computer Science},
+  volume={275},
+  pages={28--37},
+  year={2026},
+  issn={1877-0509},
+  doi={10.1016/j.procs.2026.01.005},
+  url={https://www.sciencedirect.com/science/article/pii/S1877050926000050}
+}
+```
