@@ -9,7 +9,6 @@ authors:
   - family-names: "Ali"
     given-names: "Mubashir"
 doi: "10.1016/j.procs.2026.01.005"
-date-released: "2026"
 repository-code: "https://github.com/bakhyt/kazakh-extrinsic-plagiarism-detection"
 preferred-citation:
   type: article
