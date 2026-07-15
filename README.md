@@ -76,6 +76,33 @@ This project successfully:
 
 ---
 
+## 📄 Publication
+
+This project is associated with the following published paper:
+
+**Bakiyev, B., Kovatchev, V., & Ali, M. (2026). PAN-KK: A Language Resource for Plagiarism Detection in Low-Resource Kazakh. Procedia Computer Science, 275, 28–37.**  
+ISSN: 1877-0509  
+DOI: https://doi.org/10.1016/j.procs.2026.01.005  
+ScienceDirect: https://www.sciencedirect.com/science/article/pii/S1877050926000050
+
+## 📚 Citation
+
+If you use this repository, dataset materials, code, or experimental results, please cite:
+
+```bibtex
+@article{bakiyev2026pankk,
+  title={PAN-KK: A Language Resource for Plagiarism Detection in Low-Resource Kazakh},
+  author={Bakiyev, Bakhyt and Kovatchev, Venelin and Ali, Mubashir},
+  journal={Procedia Computer Science},
+  volume={275},
+  pages={28--37},
+  year={2026},
+  issn={1877-0509},
+  doi={10.1016/j.procs.2026.01.005},
+  url={https://www.sciencedirect.com/science/article/pii/S1877050926000050}
+}
+```
+
 ## 📬 Contact
 
 For questions, feedback, or collaboration inquiries, please reach out via email or [open an issue](https://github.com/your-username/kazakh-extrinsic-plagiarism-detection/issues) on GitHub.
